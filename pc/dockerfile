@@ -1,5 +1,5 @@
 FROM python:3.10-slim
 WORKDIR /app
 COPY processor.py .
-RUN pip install flask
+RUN pip install flask dotenv
 CMD ["python", "-u", "processor.py"]

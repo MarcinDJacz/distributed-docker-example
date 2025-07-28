@@ -4,7 +4,11 @@ services:
     build: ./laptop
     ports:
       - "5001:5000"
+    env_file:
+      - .env
   pc:
     build: ./pc
     ports:
       - "5000:5000"
+    env_file:
+      - .env
