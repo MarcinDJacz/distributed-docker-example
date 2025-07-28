@@ -1,0 +1,10 @@
+version: '3'
+services:
+  laptop:
+    build: ./laptop
+    ports:
+      - "5001:5000"
+  pc:
+    build: ./pc
+    ports:
+      - "5000:5000"

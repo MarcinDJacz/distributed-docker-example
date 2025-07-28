@@ -8,7 +8,7 @@ def main():
         start_num += 1
         print(f"Sending {start_num}...")
         try:
-            requests.post("http://192.168.100.209/process", json={"number": start_num})
+            requests.post("http://192.168.100.209:5000/process", json={"number": start_num})
         except Exception as e:
             print(f"Error: {e}")
         time.sleep(2)
